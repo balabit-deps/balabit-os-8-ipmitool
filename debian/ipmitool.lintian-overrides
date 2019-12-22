@@ -1,0 +1,4 @@
+#
+# see bug #932378
+#
+ipmitool: missing-versioned-depends-on-init-system-helpers postinst:23 "update-rc.d defaults-disabled" needs init-system-helpers >= 1.50
