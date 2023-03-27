@@ -1,3 +1,22 @@
+ipmitool (1.8.18-8ubuntu0.1) focal-security; urgency=medium
+
+  * SECURITY UPDATE: Buffer Overflow
+    - d/p/CVE-2020-5208_1_Fix_buffer_overflow_vulnerabilities.patch: Fix
+      buffer overflow vulnerabilities.
+    - d/p/CVE-2020-5208_2-fru-Fix-buffer-overflow-in-
+      ipmi_spd_print_fru.patch: Fix buffer overflow in ipmi_spd_print_fru.
+    - d/p/CVE-2020-5208_3-session-Fix-buffer-overflow-in-
+      ipmi_get_session_info.patch: Fix buffer overflow in ipmi_get_session_info
+    - d/p/CVE-2020-5208_4-channel-Fix-buffer-overflow.patch: Fix buffer
+      overflow. Partial fix for CVE-2020-5208.
+    - d/p/CVE-2020-5208_5_lanp-Fix-buffer-overflows-in-
+      get_lan_param_select.patch: Fix buffer overflows in get_lan_param_select.
+    - d/p/CVE-2020-5208_6-fru-sdr-Fix-id_string-buffer-overflows.patch:
+      fru, sdr: Fix id_string buffer overflows.
+    - CVE-2020-5208
+
+ -- Paulo Flabiano Smorigo <pfsmorigo@canonical.com>  Mon, 27 Mar 2023 12:50:19 -0300
+
 ipmitool (1.8.18-8) unstable; urgency=medium
 
   * New debian/patches/0130-Correct_lanplus_segment_violation.patch:
