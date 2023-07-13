@@ -1,3 +1,13 @@
+ipmitool (1.8.18-8ubuntu0.2) focal; urgency=medium
+
+  * Fix persistent boot options when multiple options are set. Previously
+    flags were wiped out due to a logic error, leaving only the final flag
+    set. This set of patches ensures that all flags are set correctly.
+    (LP: #2017701)
+    - d/p/lp2017701-chassis-bootparam-bootdev-Refactor-for-less-magic.patch 
+
+ -- Matthew Ruffell <matthew.ruffell@canonical.com>  Thu, 13 Jul 2023 15:23:17 +1200
+
 ipmitool (1.8.18-8ubuntu0.1) focal-security; urgency=medium
 
   * SECURITY UPDATE: Buffer Overflow
